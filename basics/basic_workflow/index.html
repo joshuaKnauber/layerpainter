@@ -81,6 +81,14 @@
 
     </ul>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../..">Layer Stack</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../..">Base Textures</a>
+                </li>
     </ul>
 	    </li>
           
@@ -91,6 +99,10 @@
                 <li class="">
                     
     <a class="" href="../../normal_layers/channels/">Channels</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../normal_layers/painting/">Painting</a>
                 </li>
                 <li class="">
                     
@@ -143,11 +155,76 @@
           
             <li class="toctree-l1">
 		
+    <span class="caption-text">Vector FX</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../vectorfx/layers/">Layers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../vectorfx/custom/">Custom</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
     <span class="caption-text">Folder layers</span>
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../masks/generators/">Generators</a>
+    <a class="" href="../../folders/folders/">Folders</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../folders/submaterials/">Sub-Materials</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Helpful tools</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../..">HDRI rotation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../..">Texture Popover</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../..">Quick Panel</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../..">Brush Pie Menu</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../..">Eraser</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Baking</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../..">Masks</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../..">Other</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../..">Export</a>
                 </li>
     </ul>
 	    </li>
@@ -196,9 +273,10 @@
 <p>When you have the material selected that you want to edit, <em>you have two options to progress:</em></p>
 <div class="admonition tip">
 <p class="admonition-title">Channels</p>
-<p>Different to 2D software a channel is not just R,G or B, but for example the Color, Roughness or Metallic of your material. You can paint on these channels, add maks and filters to them and finally bake them.</p>
+<p>Different to 2D software a channel in Layer Painter is not just R,G or B, but for example the Color, Roughness or Metallic of your material. You can paint on these channels, add maks and filters to them and finally bake them.</p>
 </div>
 <h3 id="option-1-choosing-a-preset">Option 1: Choosing a preset</h3>
+<p><img alt="gif" src="/img/selectPreset.gif" /></p>
 <p>Below your list of materials you will see a dropdown with a list of presets. Selecting a preset will do the following:</p>
 <ul>
 <li>Remove all nodes in your material</li>
@@ -222,15 +300,16 @@
 <li><strong>Use 32 bit:</strong> If this is enabled the textures you paint in this channel will use 32 bits</li>
 <li><strong>Use Normal Mixing:</strong> If this is enabled you will be able to use proper blending for normal maps. This should only be enabled for a Normal channel</li>
 </ul>
-<p>Once you click ok, the channel is added to your material and your are ready to go!</p>
+<p>Once you click ok, the channel is added to your material and your are ready to go!
+Note that you can click the 'Edit Presets' button here to create a new preset from your created nodes and channels.</p>
 <h1 id="layer-basics">Layer Basics</h1>
 <p>Now that you have channels in your material, you can start actually using Layer Painter. Go back to the material properties panel. You will stay here from now on. Let's start by adding a layer.</p>
 <p><img alt="gif" src="/img/addLayer.gif" /></p>
 <p>In the 'Layer Stack' panel you will see that a layer has appeared. Here you can give it a name or hide it.</p>
 <p>Once you add a layer the settings panel shows options for that layer.</p>
 <p><img alt="gif" src="/img/settingsNav.gif" /></p>
-<p>The first thing you see in the settings panel is the navigation. Here you can select what aspect of the layer you want to edit. These might be a little bit different depending on what type of layer you have selected. We will get to that in more detail later.</p>
-<p>When you have the general layer settings selected, you can see that there is a list of the enabled channels. Note that these are not all channels that you have added earlier but only those that are enabled for that particular layer. <em>This is a pretty important concept to understand:</em> Not every layer needs to have every channel that is available. There can be layers that only have one channel, in fact that is very common. You can at any time add and remove channels from a layer. Here you can choose from all the channels your material has.</p>
+<p>The first thing you see in the settings panel is the navigation. Here you can select what aspect of the layer you want to edit.</p>
+<p>When you have the general layer settings selected, you can see that there is a list of the enabled channels. Note that these are not all channels that you have added earlier but only those that are enabled for that particular layer. <em>This is a pretty important concept to understand:</em> Not every layer needs to have every channel that is available. There can be layers that only have one channel, in fact that is very common. You can, at any time, add and remove channels from a layer. Here you can choose from all the channels your material has.</p>
 <p>Below that selection you have the mapping settings. Those control the mapping of the textures that this layer has. This does not include masks which we will get into later.</p>
 <p>Try adding a few channels to your layer and playing with the values you see in the settings. Also add more layers and see how that affects what you see in the viewport. Again, this is a very important concept to understand and you will not get very far without it.</p>
               
@@ -240,7 +319,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../normal_layers/channels/" class="btn btn-neutral float-right" title="Channels">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../.." class="btn btn-neutral float-right" title="Layer Stack">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../installation/" class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -272,7 +351,7 @@
         <span><a href="../installation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../normal_layers/channels/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../.." style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
