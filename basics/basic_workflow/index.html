@@ -267,7 +267,7 @@
               
                 <h1 id="first-steps">First steps</h1>
 <p>The first thing you need to do when using the addon is go to the material properties of an object and switch to Layer Painter.</p>
-<p><img alt="gif" src="/img/switchToLp.gif" /></p>
+<p><img alt="gif" src="../switchToLp.gif" /></p>
 <p>Optionally you can also open up the provided workspace by clicking the screen icon next to 'Layer Painter'. This workspace is set up to work well with Layer Painter but you do not need to use it.</p>
 <p>You have the same selection of materials that you get when you have 'Default' selected. The difference is in the panels below that. <strong>Note</strong> that you can switch back and forth between the two at any time.</p>
 <p>When you have the material selected that you want to edit, <em>you have two options to progress:</em></p>
@@ -276,7 +276,7 @@
 <p>Different to 2D software a channel in Layer Painter is not just R,G or B, but for example the Color, Roughness or Metallic of your material. You can paint on these channels, add maks and filters to them and finally bake them.</p>
 </div>
 <h3 id="option-1-choosing-a-preset">Option 1: Choosing a preset</h3>
-<p><img alt="gif" src="/img/selectPreset.gif" /></p>
+<p><img alt="gif" src="../selectPreset.gif" /></p>
 <p>Below your list of materials you will see a dropdown with a list of presets. Selecting a preset will do the following:</p>
 <ul>
 <li>Remove all nodes in your material</li>
@@ -288,7 +288,7 @@
 <h3 id="option-2-adding-your-own-channels">Option 2: Adding your own channels</h3>
 <p>Alternatively to selecting a preset you can also add your own channels.</p>
 <p>For that you need to go to the shader editor where you can see the nodes of your material.</p>
-<p><img alt="gif" src="/img/addChannel.gif" /></p>
+<p><img alt="gif" src="../addChannel.gif" /></p>
 <p>You are marking an input of a node as a channel. This means that you can then add a layer where you enable this channel and get options to paint textures, add masks and more. The basic idea behind this is that Layer Painter can now add its own nodes to this input to create the layers.</p>
 <p>Select the node that has the input you want to use as a channel. In the example that is the Principled BSDF. Now you will see the inputs of that node in the panel on the right. Click on 'Add <em>Your Input</em>'. This will open a popup with a few settings:</p>
 <ul>
@@ -304,10 +304,10 @@
 Note that you can click the 'Edit Presets' button here to create a new preset from your created nodes and channels.</p>
 <h1 id="layer-basics">Layer Basics</h1>
 <p>Now that you have channels in your material, you can start actually using Layer Painter. Go back to the material properties panel. You will stay here from now on. Let's start by adding a layer.</p>
-<p><img alt="gif" src="/img/addLayer.gif" /></p>
+<p><img alt="gif" src="../addLayer.gif" /></p>
 <p>In the 'Layer Stack' panel you will see that a layer has appeared. Here you can give it a name or hide it.</p>
 <p>Once you add a layer the settings panel shows options for that layer.</p>
-<p><img alt="gif" src="/img/settingsNav.gif" /></p>
+<p><img alt="gif" src="../settingsNav.gif" /></p>
 <p>The first thing you see in the settings panel is the navigation. Here you can select what aspect of the layer you want to edit.</p>
 <p>When you have the general layer settings selected, you can see that there is a list of the enabled channels. Note that these are not all channels that you have added earlier but only those that are enabled for that particular layer. <em>This is a pretty important concept to understand:</em> Not every layer needs to have every channel that is available. There can be layers that only have one channel, in fact that is very common. You can, at any time, add and remove channels from a layer. Here you can choose from all the channels your material has.</p>
 <p>Below that selection you have the mapping settings. Those control the mapping of the textures that this layer has. This does not include masks which we will get into later.</p>
