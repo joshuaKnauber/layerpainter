@@ -164,8 +164,16 @@
             <div class="section">
               
                 <h1 id="creating-a-custom-mask">Creating a custom mask</h1>
+<p>A custom mask is basically just a node group. It's first input is the color of the channel it is effecting and the first output is the color that it gets changed to. All other inputs are then visible in the interface for the user to control the mask with.</p>
+<p><img alt="png" src="../custom.png" /></p>
+<p>In the example you can see the Color input and the Color output which represent the ones explained above. The Hue, Saturation, Value and the Fac are what is then visible in the interface:</p>
+<p><img alt="png" src="../interface.png" /></p>
+<p>You can create your own node groups this way and then load them into Layer Painter as explained below.</p>
 <h1 id="input-settings">Input settings</h1>
+<p>The input settings are the same as for the custom filters which you can find <a href="../../filters/custom/">here</a>.</p>
+<p>When you select texture for an input you have the option to choose a baked mask. This will then make that input require that mask to be baked for it to work.</p>
 <h1 id="add-to-layer-painter">Add to Layer Painter</h1>
+<p>You add the custom masks the same way as you add the filters. You can find the explanation <a href="../../filters/custom/">here</a>.</p>
               
             </div>
           </div>
